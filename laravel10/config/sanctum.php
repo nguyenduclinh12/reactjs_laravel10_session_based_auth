@@ -33,6 +33,7 @@ return [
     |
     */
 
+ 
     'guard' => ['web'],
 
     /*
@@ -60,6 +61,7 @@ return [
     */
 
     'middleware' => [
+        // dành cho xác thực Session-based authentication (cookie-based auth)
         'verify_csrf_token' => App\Http\Middleware\VerifyCsrfToken::class,
         'encrypt_cookies' => App\Http\Middleware\EncryptCookies::class,
     ],
